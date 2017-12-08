@@ -84,6 +84,6 @@ class RiskTypeSerializer(serializers.ModelSerializer):
             if to_delete:
                 instance.fields.filter(id__in=to_delete).delete()
                 # sanity check, make sure we have at-least one field associated
-                assert instance.get_fields_count == 1
+                assert instance.fields.count() > 0
 
         return instance
