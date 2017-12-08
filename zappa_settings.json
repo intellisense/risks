@@ -1,0 +1,11 @@
+{
+    "dev": {
+        "django_settings": "backend.settings",
+        "aws_region": "us-east-1",
+        "profile_name": "zappa",
+        "project_name": "risks",
+        "runtime": "python2.7",
+        "s3_bucket": "<aws-s3-bucket-name>",
+        "exclude": [".idea", ".git", "node_modules", "venv", "env", "site_media", "*.sqlite3", "*.DS_Store", "*.pyc", ".env", "*.gz", "*.zip"]
+    }
+}

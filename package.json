@@ -1,0 +1,42 @@
+{
+  "name": "insurance-risks-app",
+  "description": "Create Custom Insurance Risks",
+  "version": "1.0.0",
+  "author": "Aamir Rind <aamir.adnan.rind@gmail.com>",
+  "private": true,
+  "scripts": {
+    "lint": "eslint --ext .js,.vue frontend",
+    "dev": "cross-env NODE_ENV=development node server.js",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+  },
+  "dependencies": {
+    "vue": "^2.5.9",
+    "vuedraggable": "^2.15.0",
+    "vuetify": "^0.17.4"
+  },
+  "devDependencies": {
+    "babel-core": "^6.0.0",
+    "babel-eslint": "^8.0.3",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-2": "^6.22.0",
+    "cross-env": "^5.1.1",
+    "css-loader": "^0.28.7",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.5.0",
+    "eslint": "^4.12.1",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-html": "^4.0.1",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-node": "^5.2.1",
+    "file-loader": "^1.1.5",
+    "vue-loader": "^13.5.0",
+    "vue-template-compiler": "^2.1.0",
+    "webpack": "^3.10.0",
+    "webpack-bundle-tracker": "^0.2.0",
+    "webpack-dev-server": "^2.1.0-beta.9",
+    "axios": "^0.17.1"
+  }
+}

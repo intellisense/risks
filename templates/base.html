@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% load render_bundle from webpack_loader %}
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>{% block title %}{% endblock title %} | Insurance Risks</title>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, minimal-ui">
+    {% block base_css %}
+      {% include "fragments/_css.html" %}
+    {% endblock base_css %}
+    {% block css %}{% endblock css %}
+  </head>
+  <body>
+    {% block content %}{% endblock content %}
+
+    {% block base_js %}
+      {% render_bundle 'main' %}
+    {% endblock base_js %}
+    {% block js %}{% endblock js %}
+  </body>
+</html>
